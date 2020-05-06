@@ -1,4 +1,4 @@
-# ADS Project 5: 
+# ADS Project 5: Dog Breed Identification App
 
 Term: Spring 2020
 
@@ -10,9 +10,11 @@ Term: Spring 2020
 	+ Ziyang Zhang
 	+ Huizhe Zhu
 	+ Wenjie Xie
-+ Project summary: In this project, we will develop CNN algorithm that will accept any dog image and return an estimate of the breed of the dog. We used Keras (Tensorflow high level API) and OpenCV (Computer vision library) in our project. 
+## Project summary: 
 
-+ Datasets:
+In this project, we will develop CNN algorithm that will accept any dog image and return an estimate of the breed of the dog. We used Keras (Tensorflow high level API) and OpenCV (Computer vision library) in our project. 
+
+## Datasets:
 
 Dog dataset: https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip
 
