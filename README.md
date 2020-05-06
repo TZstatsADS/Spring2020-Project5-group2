@@ -13,7 +13,9 @@ Term: Spring 2020
 + Project summary: In this project, we will develop CNN algorithm that will accept any dog image and return an estimate of the breed of the dog. We used Keras (Tensorflow high level API) and OpenCV (Computer vision library) in our project. 
 
 + Datasets:
+
 Dog dataset: https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip
+
 Dog dataset addition: http://vision.stanford.edu/aditya86/ImageNetDogs/
 	
 **Contribution statement**: ([default](doc/a_note_on_contributions.md)) All team members contributed equally in all stages of this project. All team members approve our work presented in this GitHub repository including this contributions statement. 
