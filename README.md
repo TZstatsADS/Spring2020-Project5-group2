@@ -2,15 +2,19 @@
 
 Term: Spring 2020
 
-+ Team #
-+ Projec title: Lorem ipsum dolor sit amet
++ Team 2
++ Projec title: Dog Breed Identification App
 + Team members
-	+ team member 1
-	+ team member 2
-	+ team member 3
-	+ team member 4
-	+ team member 5
-+ Project summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	+ Yuyao Wang
+	+ Qin Zhang
+	+ Ziyang Zhang
+	+ Huizhe Zhu
+	+ Wenjie Xie
++ Project summary: In this project, we will develop CNN algorithm that will accept any dog image and return an estimate of the breed of the dog. We used Keras (Tensorflow high level API) and OpenCV (Computer vision library) in our project. 
+
++ Datasets:
+Dog dataset: https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip
+Dog dataset addition: http://vision.stanford.edu/aditya86/ImageNetDogs/
 	
 **Contribution statement**: ([default](doc/a_note_on_contributions.md)) All team members contributed equally in all stages of this project. All team members approve our work presented in this GitHub repository including this contributions statement. 
 
