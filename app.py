@@ -12,30 +12,17 @@ from flask_uploads import UploadSet, configure_uploads, IMAGES, patch_request_cl
 ###
 
 app = Flask(__name__)
-app.config['DEBUG'] = True
+#app.config['DEBUG'] = True
 app.config['SECRET_KEY'] = 'BYg352ZiVVafzG1Frwsj'
-
-photos = UploadSet('photos', IMAGES)
-configure_uploads(app, photos)
-patch_request_class(app)  # set maximum file size, default is 16MB
 
 
 class UploadForm(FlaskForm):
-    photo = FileField(validators=[FileAllowed(['jpg', 'png','jpeg'], 'Image only!'), FileRequired('File was empty!')],label="Select dog or human image")
-    submit = SubmitField('Upload')
+    photo = FileField(validators=[FileAllowed(['jpg', 'png','jpeg'], u'Image only!'), FileRequired(u'File was empty!')],label="Select dog or human image")
+    #submit = SubmitField(u'Upload and classify')
 
 model  = DogModel()
 @app.route("/")
 @app.route('/predict', methods=['GET', 'POST'])
-def upload_file():
-    form = UploadForm()
-    if form.validate_on_submit():
-        filename = photos.save(form.photo.data)
-        file_url = photos.url(filename)
-    else:
-        file_url = None
-    return render_template('index.html', form=form, file_url=file_url)
-
 def predict():
     form = UploadForm()
     file_path = './static/images/Airedale_terrier_00163.jpg'
@@ -47,7 +34,7 @@ def predict():
         
         f = form.photo.data
         filename = secure_filename(f.filename)
-        name = uuid.uuid4().hex
+        #name = uuid.uuid4().hex
         file_path = os.path.join(
             'static', 'images', filename
         )
@@ -64,5 +51,6 @@ def predict():
 ## Uncomment the below to run locally
 if __name__ == "__main__":
   app.run( port=8000, debug=False, host='localhost')
+
 
 
