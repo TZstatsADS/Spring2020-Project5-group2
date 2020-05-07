@@ -48,7 +48,20 @@ After several test I was able to reach accuracy of ~72% which is a huge improvem
 
 
 
-**Contribution statement**: ([default](doc/a_note_on_contributions.md)) All team members contributed equally in all stages of this project. All team members approve our work presented in this GitHub repository including this contributions statement. 
+**Contribution statement**: ([default](doc/a_note_on_contributions.md)) All team members contributed equally in all stages of this project. All team members approve our work presented in this GitHub repository including this contributions statement.
+
+Team members: Xiewen Jie, Yuyao Wang, Ziyang Zhang, Huizhe Zhu, Qin Zhang
+
+Xiewen Jie：contributed to the app part related to this project, mainly for app.py, responsible for checking the app's function.
+
+Yuyao Wang: Presenter and contributed to the identification algorithm related to this project with Ziyang Zhang
+
+Ziyang Zhang: contributed to the identification algorithm related to this project with Yuyao Wang.
+
+Qin Zhang: contributed to the app part related to this project, mainly for master.html, prediction.html, and help with app.py.
+
+Huizhe Zhu: contributed to the app part related to this project.
+
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
 
