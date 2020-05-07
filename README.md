@@ -14,6 +14,8 @@ Term: Spring 2020
 
 In this project, we will develop CNN algorithm that will accept any dog image and return an estimate of the breed of the dog. We used Keras (Tensorflow high level API) and OpenCV (Computer vision library) in our project. In our app, you can upload a picture which has a dog(please make sure there is a dog in your picture.) and this app will help you identity the breed of dog. 
 
+![screenshot](doc/home.png)
+
 ## Datasets:
 
 Dog dataset: https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip
@@ -47,7 +49,6 @@ The achieved test accuracy was ~43%, a big mprovement compared to the model we b
 After several test I was able to reach accuracy of ~72% which is a huge improvement and acceptable metric for his project.
 
 
-![screenshot](doc/home1.png)
 
 ![screenshot](doc/home2.png)
 
