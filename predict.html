@@ -1,0 +1,84 @@
+{% extends "master.html" %}
+
+{% block content %}
+<p class="lead">Upload a dog image to predict it's breed</p>
+<form method="post" enctype="multipart/form-data" action="/predict" class="form-inline">
+    
+    {{ form.hidden_tag() }}
+    <div class="form-group mx-sm-3 mb-2">
+    {{ form.photo }}
+    {% for error in form.photo.errors %}
+    <span style="color: red;">{{ error }}</span>
+    {% endfor %}
+    </div>
+    <!--{{ form.submit }}-->
+    <button type="submit" class="btn btn-primary mb-2">Upload and classify</button>
+    <br>
+</form>
+
+<div style="padding-top:15px"></div>
+
+{% if prediction == 0 %}
+<div class="alert alert-warning" role="alert">
+        <h4 class="alert-heading">Error!</h4>
+        <hr>
+    Could not detect a face or a dog in the provided image
+</div>
+{% elif prediction %}
+   
+<div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">{{prediction[0]}}</h4>
+       
+        <hr>
+        {{prediction[1]}} <b>{{prediction[2]}}</b>
+      </div>
+
+{% else %}
+<div class="row pt-10" style="padding-top:15px">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/static/sample/Affenpinscher_2.jpg">
+              <img src="/static/sample/Affenpinscher_2.jpg"  class="img-responsive" alt="Lights" style="width:100%">
+              <div class="caption">
+                <p>Affenpinscher</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/static/sample/Afghan_hound_1.jpg">
+              <img src="/static/sample/Afghan_hound_1.jpg"  class="img-responsive" alt="Nature" style="width:100%">
+              <div class="caption">
+                <p>Afghan hound</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/static/sample/American_eskimo_dog_00395.jpg">
+              <img src="/static/sample/American_eskimo_dog_00395.jpg"  class="img-responsive" alt="Fjords" style="width:100%">
+              <div class="caption">
+                <p>American eskimo</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+{% endif %}  
+
+
+    
+
+
+<br>
+{% if file_path %}
+<img src="{{ file_path }}">
+{% endif %}  
+
+
+
+
+
+{% endblock %}
